@@ -84,73 +84,73 @@
 .menu ul li {
   transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.menu-mac.is-closed {
+.menu-inicio.is-closed {
   animation-name: specialFadeIn;
   animation-delay: 30ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
 }
-.menu-mac.hidden {
+.menu-inicio.hidden {
   animation-name: specialFadeOut;
   animation-delay: 245ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
 }
-.menu-iPad.is-closed {
+.menu-team.is-closed {
   animation-name: specialFadeIn;
   animation-delay: 70ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
 }
-.menu-iPad.hidden {
+.menu-team.hidden {
   animation-name: specialFadeOut;
   animation-delay: 210ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
 }
-.menu-iPhone.is-closed {
+.menu-rutas.is-closed {
   animation-name: specialFadeIn;
   animation-delay: 100ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
 }
-.menu-iPhone.hidden {
+.menu-rutas.hidden {
   animation-name: specialFadeOut;
   animation-delay: 170ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
 }
-.menu-watch.is-closed {
+.menu-entrenos.is-closed {
   animation-name: specialFadeIn;
   animation-delay: 130ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
 }
-.menu-watch.hidden {
+.menu-entrenos.hidden {
   animation-name: specialFadeOut;
   animation-delay: 130ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
 }
-.menu-tv.is-closed {
+.menu-eventos.is-closed {
   animation-name: specialFadeIn;
   animation-delay: 170ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
 }
-.menu-tv.hidden {
+.menu-eventos.hidden {
   animation-name: specialFadeOut;
   animation-delay: 100ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
 }
-.menu-support.is-closed {
+.menu-contact.is-closed {
   animation-name: specialFadeIn;
   animation-delay: 210ms;
   animation-duration: 400ms;
   animation-fill-mode: both;
 }
-.menu-support.hidden {
+.menu-contact.hidden {
   animation-name: specialFadeOut;
   animation-delay: 70ms;
   animation-duration: 400ms;
