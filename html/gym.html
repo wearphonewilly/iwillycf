@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team</title>
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
@@ -17,7 +16,7 @@
             <!-- Menu -->
             <ul class="menu">
                 <li class="menu-inicio">
-                    <a href="#">
+                    <a href="../index.html">
                         <span>Inicio</span>
                     </a>
                 </li>
@@ -46,9 +45,33 @@
                         <span>Contacto</span>
                     </a>
                 </li>
+                <li class="menu-gym">
+                    <a href="gym.html">
+                        <span>Gym Time</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
+
+    <script>
+        function go() {
+
+            if (document.form.password.value == 'Ferran' && document.form.login.value == 'Ferran' || document.form.password.value == 'Albert' && document.form.login.value == 'Albert' || document.form.password.value == 'Willy' && document.form.login.value == 'Willy') {
+                document.form.submit();
+            } else {
+                alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
+            }
+        }
+    </script>
+
+    <form name=form action="gymTimeLogin.html">
+
+        <p>Usuario: <input type=text name=login>
+        <p>Contraseña: <input type=password name=password>
+        <input onclick=go() type=button value=Acceder>
+
+    </form>
 
 </body>
 

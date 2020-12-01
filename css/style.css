@@ -1,3 +1,11 @@
+h3, td { 
+    color: white;
+}
+
+nav {
+    margin-left: -10%;
+}
+
 body {
     background-color: #000000;
 }
