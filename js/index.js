@@ -1,29 +1,43 @@
-(function() {
+function loadEvents(){
+	contentDiv = document.getElementById("content");
+	document.getElementById("inicioButton").addEventListener("click", loadInicio);
+	document.getElementById("teamButton").addEventListener("click", loadTeam);
+	document.getElementById("rutasButton").addEventListener("click", loadRutas);
+	document.getElementById("entrenosButton").addEventListener("click", loadEntrenos);
+	document.getElementById("eventosButton").addEventListener("click", loadEventos);
+	document.getElementById("contactoButton").addEventListener("click", loadContacto);
+	document.getElementById("gymButton").addEventListener("click", loadGym);
+	loadInicio();
+}
 
-    'use strict';
-    
-    var $searchView = $('.menu-search-container');
-    var $menu = $('.menu-inicio, .menu-team, .menu-rutas, .menu-entrenos, .menu-eventos, .menu-contact, .menu-search, .menu-store');
-    var $fadeScreen = $('.fade-screen');
-    
-    $('li.menu-search a, .fade-screen, .menu-search-close').on('click', function(e) {
-      
-      $searchView.toggleClass('active');
-      
-      setTimeout(function(){
-        $searchView.children().find('input').focus();
-      }, 1100);
-      
-      $fadeScreen.toggleClass('visible');
-      $menu.removeClass('is-closed');
-      $menu.toggleClass('hidden');
-      
-      e.preventDefault();
-    });
-    
-    $('.fade-screen,.menu-search-close').on('click', function(e) {
-      $menu.toggleClass('is-closed');
-      e.preventDefault();
-    });
-      
-  }())
+async function fetchHtmlAsText(url) {
+  	return await (await fetch(url)).text();
+}
+
+async function loadInicio(){
+	contentDiv.innerHTML = await fetchHtmlAsText("html/inicio.html");
+}
+
+async function loadTeam(){
+	contentDiv.innerHTML = await fetchHtmlAsText("html/team.html");
+}
+
+async function loadRutas(){
+  contentDiv.innerHTML = await fetchHtmlAsText("html/rutas.html");
+}
+
+async function loadEntrenos(){
+  contentDiv.innerHTML = await fetchHtmlAsText("html/entrenos.html");
+}
+
+async function loadContacto(){
+  contentDiv.innerHTML = await fetchHtmlAsText("html/contacto.html");
+}
+
+async function loadGym(){
+  contentDiv.innerHTML = await fetchHtmlAsText("html/gym.html");
+}
+
+async function loadEventos(){
+  contentDiv.innerHTML = await fetchHtmlAsText("html/eventos.html");
+}
