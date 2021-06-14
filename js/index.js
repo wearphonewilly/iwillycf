@@ -2,11 +2,11 @@ function loadEvents(){
 	contentDiv = document.getElementById("content");
 	document.getElementById("inicioButton").addEventListener("click", loadInicio);
 	document.getElementById("teamButton").addEventListener("click", loadTeam);
-	document.getElementById("rutasButton").addEventListener("click", loadRutas);
+	//document.getElementById("rutasButton").addEventListener("click", loadRutas);
 	document.getElementById("entrenosButton").addEventListener("click", loadEntrenos);
-	document.getElementById("eventosButton").addEventListener("click", loadEventos);
+	//document.getElementById("eventosButton").addEventListener("click", loadEventos);
 	document.getElementById("contactoButton").addEventListener("click", loadContacto);
-	document.getElementById("gymButton").addEventListener("click", loadGym);
+	//document.getElementById("gymButton").addEventListener("click", loadGym);
 	loadInicio();
 }
 

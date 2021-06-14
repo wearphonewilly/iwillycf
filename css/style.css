@@ -6,7 +6,7 @@ h1#title{
 
 body {
     background: rgba( 0, 0, 0, 1);
-    background-image: linear-gradient(rgb(39, 36, 31), rgba( 0, 0, 0, 1) 240px);
+    background-image: linear-gradient(rgb(39, 25, 1), rgba( 0, 0, 0, 1) 240px);
     background-repeat: no-repeat;
     min-width: 860px;
     color: #c26732;
@@ -14,42 +14,6 @@ body {
 
 p{
     color: white;
-}
-
-div#block1{
-    width: 680px;
-    height: auto;
-    position: relative;
-    top: 0%;
-    left: 20px;
-    padding: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #f07026;
-}
-
-div#block2{
-    width: 680px;
-    height: auto;
-    position: relative;
-    top: 20px;
-    left: 80px;
-    padding: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #f07026;
-}
-
-div#block3{
-    width: 680px;
-    height: auto;
-    position: relative;
-    top: 40px;
-    left: 40px;
-    padding: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #f07026;
 }
 
 .topnav {
@@ -71,6 +35,7 @@ div#block3{
 
 .topnav a:hover {
     background-color: #c26732;
+    border-radius: 6px;
     color: black;
     cursor: pointer;
 }
@@ -80,11 +45,13 @@ div#block3{
 }
 
 div#content{
-    margin: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
+/*
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
+    .topnav a:not(:only-child) {display: none;}
     .topnav a.icon {
         float: right;
         display: block;
@@ -104,3 +71,4 @@ div#content{
         text-align: left;
     }
 }
+*/
